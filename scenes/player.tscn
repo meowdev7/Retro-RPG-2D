@@ -420,9 +420,9 @@ position = Vector2(0, -17)
 
 [node name="animatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_vgn16")
-animation = &"attack_sideways"
+animation = &"idle_front"
 autoplay = "idle_front"
-frame_progress = 0.710878
+frame_progress = 0.272188
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0.5, 8.5)
