@@ -2,16 +2,16 @@ extends CharacterBody2D
 
 const SPEED = 300.0
 
-@onready var animated_sprite: AnimatedSprite2D = $animatedSprite2D
+@onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
 
 func _physics_process(delta: float) -> void:
 	var direction = Vector2(
 		Input.get_axis("left", "right"), 
 		Input.get_axis("up", "down")
-	)
-	
+	).normalized() # Normalizing the direction vector here
+
 	if direction != Vector2.ZERO:
-		velocity = direction.normalized() * SPEED
+		velocity = direction * SPEED
 		_update_animation(direction)
 	else:
 		velocity = velocity.move_toward(Vector2.ZERO, SPEED)
