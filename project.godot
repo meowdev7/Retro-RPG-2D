@@ -22,3 +22,11 @@ window/size/window_width_override=640
 window/size/window_height_override=480
 window/stretch/mode="viewport"
 window/vsync/vsync_mode=0
+
+[file_customization]
+
+folder_colors={
+"res://assets/": "purple",
+"res://scenes/": "teal",
+"res://scripts/": "red"
+}
