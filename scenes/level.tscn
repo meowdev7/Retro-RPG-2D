@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=4 uid="uid://c4fttct7rfcv8"]
+[gd_scene load_steps=27 format=4 uid="uid://c4fttct7rfcv8"]
 
 [ext_resource type="Texture2D" uid="uid://bo1y707h1yck1" path="res://assets/sprites/tilesets/grass.png" id="1_bumsk"]
 [ext_resource type="Texture2D" uid="uid://27ujm5wkso5t" path="res://assets/sprites/tilesets/decor_16x16.png" id="2_x1vk1"]
@@ -12,7 +12,6 @@
 [ext_resource type="Texture2D" uid="uid://d3tjp3phju5mw" path="res://assets/sprites/tilesets/floors/wooden.png" id="10_6bohi"]
 [ext_resource type="PackedScene" uid="uid://ct1rfgh05s5uv" path="res://scenes/player.tscn" id="11_bofn6"]
 [ext_resource type="Texture2D" uid="uid://uo12hs8o1ur0" path="res://assets/sprites/objects/objects.png" id="11_lsu4l"]
-[ext_resource type="PackedScene" uid="uid://c1a6unxq0ojyo" path="res://scenes/slime.tscn" id="13_l8adw"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tyww8"]
 texture = ExtResource("1_bumsk")
@@ -340,8 +339,3 @@ position = Vector2(240, 133)
 
 [node name="Camera2D" type="Camera2D" parent="player"]
 zoom = Vector2(2, 2)
-
-[node name="slime" parent="." instance=ExtResource("13_l8adw")]
-z_index = 1
-y_sort_enabled = true
-position = Vector2(59, 137)
