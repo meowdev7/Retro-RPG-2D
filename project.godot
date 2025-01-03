@@ -32,6 +32,10 @@ folder_colors={
 "res://scripts/": "red"
 }
 
+[global_group]
+
+player=""
+
 [input]
 
 up={
